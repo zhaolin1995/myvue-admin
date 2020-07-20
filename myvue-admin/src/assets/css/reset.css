@@ -1,0 +1,31 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style:none
+}
+body,html,.wrapper,#app{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-width: 760px;
+}
+body{ /** 使用的京东字体样式**/
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    /*font: 14px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;*/
+    /*color: #666;*/
+    font-family: Avenir,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji,sans-serif;
+}
+
+
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
